@@ -10,7 +10,7 @@
  * @package BP Nouveau
  */
 ?>
-<div class="bp-navs bp-subnavs group-subnav bp-invites-nav" id="subnav"></div>
+<div class="bp-navs bp-subnavs group-subnav bp-invites-nav" id="subnav" role="navigation" aria-label="<?php esc_attr_e( 'Group invitations menu', 'buddypress' ); ?>"></div>
 
 <h2 class="bp-screen-title <?php if(bp_is_group_create()) echo 'creation-step-name'; ?>">
 	<?php _e( 'Invite Members', 'bp-nouveau' ); ?>
@@ -60,15 +60,15 @@
 
 	<div class="action">
 		<# if ( undefined === data.is_sent || ( false === data.is_sent && true === data.can_edit ) ) { #>
-			<a href="#" class="button invite-button group-add-remove-invite-button" title="<?php esc_attr_e( 'Invite / Uninvite', 'bp-nouveau' );?>">
+			<button type="button" class="button invite-button group-add-remove-invite-button bp-icons" title="<?php esc_attr_e( 'Invite / Uninvite', 'bp-nouveau' );?>">
 				<span class="bp-screen-reader-text"><?php esc_html_e( 'Invite/Uninvite', 'bp-nouveau' );?></span>
-			</a>
+			</button>
 		<# } #>
 
 		<# if ( undefined !== data.can_edit && true === data.can_edit ) { #>
-			<a href="#" class="button invite-button group-remove-invite-button" title="<?php esc_attr_e( 'Remove', 'bp-nouveau' );?>">
+			<button type="button" class="button invite-button group-remove-invite-button bp-icons" title="<?php esc_attr_e( 'Remove', 'bp-nouveau' );?>">
 				<span class="bp-screen-reader-text"><?php esc_html_e( 'Remove', 'bp-nouveau' );?></span>
-			</a>
+			</button>
 		<# } #>
 	</div>
 
@@ -81,10 +81,7 @@
 </script>
 
 <script type="text/html" id="tmpl-bp-invites-form">
-	<div class="bp-send-invites-form bp-label-placeholder">
-		<label for="send-invites-control"><?php esc_html_e( 'Optional: add a message to your invite.', 'bp-nouveau' ); ?></label>
-		<textarea id="send-invites-control"  class="bp-label-in-here"></textarea>
-	</div>
+	<textarea id="send-invites-control" placeholder="<?php esc_attr_e( 'Optional: add a message to your invite.', 'bp-nouveau' ); ?>"></textarea>
 	<div class="action">
 		<button type="button" id="bp-invites-reset" class="button bp-secondary-action"><?php _ex( 'Cancel', 'Cancel invitation', 'bp-nouveau' ); ?></button>
 		<button type="button" id="bp-invites-send" class="button bp-primary-action"><?php _ex( 'Send', 'Send invitation', 'bp-nouveau' ); ?></button>
@@ -92,17 +89,19 @@
 </script>
 
 <script type="text/html" id="tmpl-bp-invites-filters">
-	<li class="group-invites-search" role="search" data-bp-search="{{data.scope}}">
-		<form action="" method="get" id="group_invites_search_form">
-			<label for="group_invites_search">
-				<input type="search" id="group_invites_search" placeholder="<?php esc_attr_e( __( 'Search', 'bp-nouveau' ) ); ?>"/>
-			</label>
-			<button type="submit" id="group_invites_search_submit">
-				<span class="dashicons dashicons-search" aria-hidden="true"></span>
-				<span class="bp-screen-reader-text"><?php esc_html_e( 'Search', 'bp-nouveau' ); ?></span>
-			</button>
-		</form>
-	</li>
+	<div class="group-invites-search subnav-search clearfix" role="search" >
+		<div class="bp-search">
+			<form action="" method="get" id="group_invites_search_form" class="bp-dir-search-form" data-bp-search="{{data.scope}}">
+				<label for="group_invites_search">
+					<input type="search" id="group_invites_search" placeholder="<?php esc_attr_e( __( 'Search', 'bp-nouveau' ) ); ?>"/>
+				</label>
+				<button type="submit" id="group_invites_search_submit" class="nouveau-search-submit">
+					<span class="dashicons dashicons-search" aria-hidden="true"></span>
+					<span class="bp-screen-reader-text"><?php esc_html_e( 'Search', 'bp-nouveau' ); ?></span>
+				</button>
+			</form>
+			</div>
+	</div>
 </script>
 
 <script type="text/html" id="tmpl-bp-invites-paginate">
