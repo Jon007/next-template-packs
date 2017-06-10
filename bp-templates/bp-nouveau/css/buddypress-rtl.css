@@ -142,7 +142,7 @@ body.buddypress article.page > .entry-header {
 body.buddypress article.page > .entry-header .entry-title {
 	font-size: 28px;
 	font-weight: inherit;
-	color: #777;
+	color: #767676;
 }
 
 @media screen and (min-width: 46.8em) {
@@ -470,7 +470,7 @@ dt.section-title {
 
 .buddypress_object_nav .bp-navs.group-create-links ul li:not(.current) a,
 .buddypress-wrap .bp-navs.group-create-links ul li:not(.current) a {
-	color: #777;
+	color: #767676;
 }
 
 .buddypress_object_nav .bp-navs.group-create-links ul li:not(.current) a:focus, .buddypress_object_nav .bp-navs.group-create-links ul li:not(.current) a:hover,
@@ -483,7 +483,7 @@ dt.section-title {
 .buddypress_object_nav .bp-navs.group-create-links ul li:not(.current) a[disabled]:focus, .buddypress_object_nav .bp-navs.group-create-links ul li:not(.current) a[disabled]:hover,
 .buddypress-wrap .bp-navs.group-create-links ul li:not(.current) a[disabled]:focus,
 .buddypress-wrap .bp-navs.group-create-links ul li:not(.current) a[disabled]:hover {
-	color: #777;
+	color: #767676;
 }
 
 .buddypress_object_nav .bp-navs.group-create-links ul li.current a,
@@ -738,7 +738,7 @@ dt.section-title {
 .buddypress-wrap .bp-pagination {
 	background: transparent;
 	border: 0;
-	color: #777;
+	color: #767676;
 	float: right;
 	font-size: small;
 	margin: 0;
@@ -759,7 +759,6 @@ dt.section-title {
 .buddypress-wrap .bp-pagination .bp-pagination-links span,
 .buddypress-wrap .bp-pagination .bp-pagination-links a {
 	font-size: small;
-	opacity: 0.9;
 	padding: 0 5px;
 }
 
@@ -842,7 +841,7 @@ dt.section-title {
 
 .bp-list li .meta,
 .bp-list li .item-meta {
-	color: #888;
+	color: #737373;
 	font-size: 12px;
 	margin-top: 10px;
 }
@@ -1149,7 +1148,7 @@ dt.section-title {
 }
 
 .activity-list .activity-item .activity-inreplyto {
-	color: #777;
+	color: #767676;
 	font-size: 13px;
 }
 
@@ -1186,19 +1185,19 @@ dt.section-title {
 
 .activity-list .activity-item .activity-header .time-since {
 	font-size: 14px;
-	color: #aaa;
+	color: #767676;
 	text-decoration: none;
 }
 
 .activity-list .activity-item .activity-header .time-since:hover {
-	color: #777;
+	color: #767676;
 	cursor: pointer;
 	text-decoration: underline;
 }
 
 .activity-list .activity-item .activity-content .activity-header,
 .activity-list .activity-item .activity-content .comment-header {
-	color: #888;
+	color: #767676;
 	margin-bottom: 10px;
 }
 
@@ -1493,7 +1492,7 @@ body.activity-permalink .activity-list .activity-comments {
 }
 
 .buddypress-wrap .activity-comments .acomment-options a {
-	color: #777;
+	color: #767676;
 	font-size: 14px;
 }
 
@@ -1550,7 +1549,7 @@ form.ac-form .ac-reply-avatar img {
 }
 
 form.ac-form .ac-reply-content {
-	color: #777;
+	color: #767676;
 	padding-right: 1em;
 }
 
@@ -1638,7 +1637,7 @@ form.ac-form .ac-reply-content input {
 	border-radius: 10px;
 	background-clip: padding-box;
 	font-size: 13px;
-	color: #777;
+	color: #737373;
 	font-style: italic;
 	margin: 10px auto 0;
 	padding: 1em;
@@ -1711,7 +1710,8 @@ form.ac-form .ac-reply-content input {
 	-ms-border-radius: 10px;
 	border-radius: 10px;
 	background-clip: padding-box;
-	color: #777;
+	color: #737373;
+	font-style: italic;
 	font-size: 13px;
 	margin: 15px auto;
 	padding: 1em;
@@ -1724,19 +1724,11 @@ form.ac-form .ac-reply-content input {
 }
 
 .buddypress-wrap .members-list li .user-update .activity-read-more {
-	background: #fafafa;
 	display: block;
 	font-size: 12px;
+	font-style: normal;
 	margin-top: 10px;
 	padding-right: 2px;
-}
-
-.buddypress-wrap .members-list li .user-update .activity-read-more:focus, .buddypress-wrap .members-list li .user-update .activity-read-more:hover {
-	background: #f7f7f7;
-}
-
-.buddypress-wrap .members-list li .user-update .activity-read-more a {
-	display: block;
 }
 
 @media screen and (min-width: 46.8em) {
@@ -1880,7 +1872,6 @@ form.ac-form .ac-reply-content input {
 .single-headers .activity {
 	display: inline-block;
 	font-size: 12px;
-	opacity: 0.8;
 	padding: 0;
 }
 
@@ -1937,7 +1928,7 @@ form.ac-form .ac-reply-content input {
 }
 
 .single-headers .item-meta {
-	color: #777;
+	color: #767676;
 	font-size: 14px;
 	margin: 15px 0 5px;
 	padding-bottom: 0.5em;
@@ -2100,6 +2091,14 @@ body.no-js .single-item-header .js-self-profile-button {
 	margin-bottom: 5px;
 }
 
+.bp-user .member-header-actions {
+	overflow: hidden;
+}
+
+.bp-user .member-header-actions * > * {
+	display: block;
+}
+
 /**
 *-----------------------------------------------------------
 * @subsection 5.2 - Item Body: Global
@@ -2201,7 +2200,7 @@ body.no-js .single-item-header .js-self-profile-button {
 }
 
 .groups-manage-members-list ul .action.text-links-list a.button {
-	color: #777;
+	color: #767676;
 	display: inline-block;
 }
 
@@ -2272,7 +2271,7 @@ body.no-js .single-item-header .js-self-profile-button {
 
 .buddypress .bp-invites-content .item-list .item-meta span,
 .buddypress .bp-invites-content .group-inviters li {
-	color: #777;
+	color: #767676;
 }
 
 .buddypress .bp-invites-content li ul.group-inviters {
@@ -2432,17 +2431,16 @@ body.no-js .single-item-header .js-self-profile-button {
 	order: 3;
 }
 
-body.no-js .buddypress .field-visibility-settings-toggle,
-body.no-js .buddypress .field-visibility-settings-close {
+body.no-js .buddypress-wrap .field-visibility-settings-toggle,
+body.no-js .buddypress-wrap .field-visibility-settings-close {
 	display: none;
 }
 
-body.no-js .buddypress .field-visibility-settings {
+body.no-js .buddypress-wrap .field-visibility-settings {
 	display: block;
 }
 
 .buddypress-wrap .field-visibility-settings {
-	display: none;
 	margin: 10px 0;
 }
 
@@ -2453,7 +2451,7 @@ body.no-js .buddypress .field-visibility-settings {
 
 .buddypress-wrap .field-visibility-settings,
 .buddypress-wrap .field-visibility-settings-header {
-	color: #777;
+	color: #737373;
 }
 
 .buddypress-wrap .field-visibility-settings fieldset {
@@ -2624,7 +2622,7 @@ li#compose-personal-li a#compose:hover {
 }
 
 .bp-messages-content time {
-	color: #777;
+	color: #737373;
 	font-size: 12px;
 }
 
@@ -2658,6 +2656,14 @@ li#compose-personal-li a#compose:hover {
 }
 
 #message-threads li .thread-cb {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
 	-webkit-flex: 1 2 5%;
 	-moz-flex: 1 2 5%;
 	-ms-flex: 1 2 5%;
@@ -2715,7 +2721,7 @@ li#compose-personal-li a#compose:hover {
 }
 
 #message-threads li .thread-content .excerpt {
-	color: #777;
+	color: #737373;
 	font-size: 12px;
 	margin: 0;
 }
@@ -2825,7 +2831,7 @@ li#compose-personal-li a#compose:hover {
 }
 
 .bp-messages-content #bp-message-thread-list .message-metadata time {
-	color: #777;
+	color: #737373;
 	font-size: 12px;
 	padding: 0 0.5em;
 }
@@ -3091,13 +3097,13 @@ div.bp-navs#subsubnav.bp-messages-filters .user-messages-bulk-actions {
 }
 
 .buddypress-wrap .standard-form p.description {
-	color: #777;
+	color: #737373;
 	margin: 5px 0;
 }
 
 .buddypress-wrap .standard-form div.checkbox label:nth-child(n+2),
 .buddypress-wrap .standard-form div.radio div label {
-	color: #777;
+	color: #737373;
 	font-size: 100%;
 	font-weight: 400;
 	margin: 5px 0 0;
@@ -3142,6 +3148,10 @@ div.bp-navs#subsubnav.bp-messages-filters .user-messages-bulk-actions {
 	.buddypress-wrap .standard-form .main-column ul#friend-list h4 {
 		clear: none;
 	}
+}
+
+.buddypress-wrap .standard-form .bp-tables-user label {
+	margin: 0;
 }
 
 .buddypress-wrap .signup-form label,
@@ -3246,12 +3256,14 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 }
 
 .buddypress-wrap form.bp-dir-search-form,
-.buddypress-wrap form.bp-messages-search-form {
+.buddypress-wrap form.bp-messages-search-form,
+.buddypress-wrap form.bp-invites-search-form {
 	border: 1px solid #eee;
 }
 
 .buddypress-wrap form.bp-dir-search-form label,
-.buddypress-wrap form.bp-messages-search-form label {
+.buddypress-wrap form.bp-messages-search-form label,
+.buddypress-wrap form.bp-invites-search-form label {
 	margin: 0;
 }
 
@@ -3260,7 +3272,11 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 .buddypress-wrap form.bp-dir-search-form button[type="submit"],
 .buddypress-wrap form.bp-messages-search-form input[type="search"],
 .buddypress-wrap form.bp-messages-search-form input[type="text"],
-.buddypress-wrap form.bp-messages-search-form button[type="submit"] {
+.buddypress-wrap form.bp-messages-search-form button[type="submit"],
+.buddypress-wrap form.bp-invites-search-form input[type="search"],
+.buddypress-wrap form.bp-invites-search-form input[type="text"],
+.buddypress-wrap form.bp-invites-search-form button[type="submit"] {
+	background: none;
 	border: 0;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
@@ -3272,14 +3288,17 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 .buddypress-wrap form.bp-dir-search-form input[type="search"],
 .buddypress-wrap form.bp-dir-search-form input[type="text"],
 .buddypress-wrap form.bp-messages-search-form input[type="search"],
-.buddypress-wrap form.bp-messages-search-form input[type="text"] {
+.buddypress-wrap form.bp-messages-search-form input[type="text"],
+.buddypress-wrap form.bp-invites-search-form input[type="search"],
+.buddypress-wrap form.bp-invites-search-form input[type="text"] {
 	float: right;
 	padding: 3px 10px;
 	width: 80%;
 }
 
 .buddypress-wrap form.bp-dir-search-form button[type="submit"],
-.buddypress-wrap form.bp-messages-search-form button[type="submit"] {
+.buddypress-wrap form.bp-messages-search-form button[type="submit"],
+.buddypress-wrap form.bp-invites-search-form button[type="submit"] {
 	float: left;
 	font-size: inherit;
 	font-weight: 400;
@@ -3291,14 +3310,16 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 }
 
 .buddypress-wrap form.bp-dir-search-form button[type="submit"] span,
-.buddypress-wrap form.bp-messages-search-form button[type="submit"] span {
+.buddypress-wrap form.bp-messages-search-form button[type="submit"] span,
+.buddypress-wrap form.bp-invites-search-form button[type="submit"] span {
 	font-family: dashicons;
 	font-size: 18px;
 	line-height: 1.6;
 }
 
 .buddypress-wrap form.bp-dir-search-form button[type="submit"],
-.buddypress-wrap form.bp-messages-search-form button[type="submit"] {
+.buddypress-wrap form.bp-messages-search-form button[type="submit"],
+.buddypress-wrap form.bp-invites-search-form button[type="submit"] {
 	height: 0;
 	right: -999em;
 	overflow: hidden;
@@ -3307,7 +3328,8 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 }
 
 .buddypress-wrap form.bp-dir-search-form button[type="submit"].bp-show,
-.buddypress-wrap form.bp-messages-search-form button[type="submit"].bp-show {
+.buddypress-wrap form.bp-messages-search-form button[type="submit"].bp-show,
+.buddypress-wrap form.bp-invites-search-form button[type="submit"].bp-show {
 	height: auto;
 	right: 0;
 	overflow: visible;
@@ -3316,14 +3338,17 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 }
 
 .buddypress-wrap form.bp-dir-search-form input[type="search"]::-webkit-search-cancel-button,
-.buddypress-wrap form.bp-messages-search-form input[type="search"]::-webkit-search-cancel-button {
+.buddypress-wrap form.bp-messages-search-form input[type="search"]::-webkit-search-cancel-button,
+.buddypress-wrap form.bp-invites-search-form input[type="search"]::-webkit-search-cancel-button {
 	-webkit-appearance: searchfield-cancel-button;
 }
 
 .buddypress-wrap form.bp-dir-search-form input[type="search"]::-webkit-search-results-button,
 .buddypress-wrap form.bp-dir-search-form input[type="search"]::-webkit-search-results-decoration,
 .buddypress-wrap form.bp-messages-search-form input[type="search"]::-webkit-search-results-button,
-.buddypress-wrap form.bp-messages-search-form input[type="search"]::-webkit-search-results-decoration {
+.buddypress-wrap form.bp-messages-search-form input[type="search"]::-webkit-search-results-decoration,
+.buddypress-wrap form.bp-invites-search-form input[type="search"]::-webkit-search-results-button,
+.buddypress-wrap form.bp-invites-search-form input[type="search"]::-webkit-search-results-decoration {
 	display: none;
 }
 
@@ -3408,21 +3433,29 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 	border-bottom: none;
 }
 
+.buddypress-wrap table.notifications td {
+	padding: 1em 0.5em;
+}
+
 .buddypress-wrap table.notifications .bulk-select-all,
 .buddypress-wrap table.notifications .bulk-select-check {
 	width: 7%;
+}
+
+.buddypress-wrap table.notifications .bulk-select-check {
+	vertical-align: middle;
 }
 
 .buddypress-wrap table.notifications .title,
 .buddypress-wrap table.notifications .notification-description,
 .buddypress-wrap table.notifications .date,
 .buddypress-wrap table.notifications .notification-since {
-	width: 35%;
+	width: 39%;
 }
 
 .buddypress-wrap table.notifications .actions,
 .buddypress-wrap table.notifications .notification-actions {
-	width: 23%;
+	width: 15%;
 }
 
 .buddypress-wrap table.notification-settings th.title,
@@ -3471,7 +3504,7 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 }
 
 .buddypress-wrap table#message-threads .thread-info p.thread-excerpt {
-	color: #777;
+	color: #737373;
 	font-size: 12px;
 	margin-top: 3px;
 }
@@ -3552,7 +3585,8 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 .buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a,
 .buddypress .buddypress-wrap .generic-button a,
 .buddypress .buddypress-wrap .comment-reply-link,
-.buddypress .buddypress-wrap a.bp-title-button {
+.buddypress .buddypress-wrap a.bp-title-button,
+.buddypress .buddypress-wrap .activity-read-more a {
 	background: #fff;
 	/* Old browsers */
 	border-color: #ccc;
@@ -3593,7 +3627,9 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 .buddypress .buddypress-wrap .generic-button a:focus,
 .buddypress .buddypress-wrap .generic-button a:hover,
 .buddypress .buddypress-wrap .comment-reply-link:focus,
-.buddypress .buddypress-wrap .comment-reply-link:hover {
+.buddypress .buddypress-wrap .comment-reply-link:hover,
+.buddypress .buddypress-wrap .activity-read-more a:focus,
+.buddypress .buddypress-wrap .activity-read-more a:hover {
 	background: #ededed;
 	border-color: #999999;
 	color: #333;
@@ -3612,7 +3648,7 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 .buddypress .buddypress-wrap div.pending a,
 .buddypress .buddypress-wrap a.disabled {
 	border-color: #eee;
-	color: #777;
+	color: #767676;
 	cursor: default;
 }
 
@@ -3627,7 +3663,7 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 .buddypress .buddypress-wrap div.pending a:hover,
 .buddypress .buddypress-wrap a.disabled:hover {
 	border-color: #eee;
-	color: #777;
+	color: #767676;
 }
 
 .buddypress .buddypress-wrap button.text-button {
@@ -3883,8 +3919,13 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 	-webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+	color: #737373;
 	margin: 10px 0;
 	position: relative;
+}
+
+.buddypress-wrap .bp-feedback p {
+	margin: 10px 0 0;
 }
 
 .buddypress-wrap .bp-feedback span.bp-icon {
@@ -3900,6 +3941,10 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 .buddypress-wrap .bp-feedback span.text {
 	margin: 0;
 	padding: 0 1em 0 0;
+}
+
+.buddypress-wrap .bp-feedback.no-icon {
+	padding: 0.5em;
 }
 
 .buddypress-wrap .bp-feedback.small:before {
@@ -3918,6 +3963,12 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 	top: 10px;
 	left: 10px;
 	width: 32px;
+}
+
+.buddypress-wrap .bp-feedback.no-icon a[data-bp-close],
+.buddypress-wrap .bp-feedback.no-icon button[data-bp-close] {
+	top: -6px;
+	left: 6px;
 }
 
 .buddypress-wrap button[data-bp-close]:hover {
@@ -4122,7 +4173,7 @@ body.no-js .buddypress #messages-bulk-management #select-all-messages {
 }
 
 .grid > li .list-wrap .update {
-	color: #777;
+	color: #737373;
 	padding: 0.5em 2em;
 }
 

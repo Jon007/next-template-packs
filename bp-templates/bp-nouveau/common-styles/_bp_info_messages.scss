@@ -97,8 +97,13 @@
 
 		@include message-box($border: none);
 		@include box-shadow( 0 1px 1px 1px rgba(0, 0, 0, 0.1) );
+		color: $light-text-plus;
 		margin: 10px 0;
 		position: relative;
+
+		p {
+			margin: $marg-sml 0 0;
+		}
 
 		span.bp-icon {
 			color: $white;
@@ -116,13 +121,12 @@
 		}
 	}
 
-	.bp-feedback.small:before {
-		line-height: inherit;
+	.bp-feedback.no-icon {
+		padding: $pad-sml;
 	}
 
-	.bp-feedback.small span.text {
-		//		display: inline-block;
-		//		margin-left: 30px;
+	.bp-feedback.small:before {
+		line-height: inherit;
 	}
 
 	a[data-bp-close] span:before,
@@ -137,6 +141,15 @@
 		top: 10px;
 		right: 10px;
 		width: 32px;
+	}
+
+	.bp-feedback.no-icon {
+
+		a[data-bp-close],
+		button[data-bp-close] {
+			top: -6px;
+			right: 6px;
+		}
 	}
 
 	button[data-bp-close]:hover {
